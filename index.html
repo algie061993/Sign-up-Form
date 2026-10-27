@@ -1,61 +1,92 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/styles.css" />
     <title>Sign-up Form</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container">
-        <div class="left">
-            <div class="logo-container">
-                <img src="./images/Logo/odin-lined.png" alt="odins-logo" class="logo">
-                <span>Odin</span>
-            </div>
-            <div class="left-footer">
-                <p>Photo by <a href="#####">Halie West</a> on <a href="#####">Unsplash</a></p>
-            </div>
+      <div class="left">
+        <div class="logo-container">
+          <img
+            src="./images/Logo/odin-lined.png"
+            alt="odins-logo"
+            class="logo"
+          />
+          <h1>Odin</h1>
+        </div>
+        <p>
+          Photo by <a href="#####">Halie West</a> on
+          <a href="#####">Unsplash</a>
+        </p>
+      </div>
+
+      <div class="right">
+        <div class="paragraph">
+          <p>
+            This is not a real online service! You know you need something like
+            this in your life to help you realize your deepest dreams. Sign up
+            <i>now</i> and get started.
+          </p>
+
+          <p>You <i>know</i> you want to.</p>
         </div>
 
-        <div class="right">
-            <div class="paragraph">
-                <p>
-                    is not real online service! You know you need something 
-                    like this in your life you realize you deepest dreams. 
-                    Sign up <i>now</i> and get started.
-                </p>
+        <div class="form-container">
+          <h1>Let's do this!</h1>
+          <form id="signup-form" action="#" method="post">
+            <div class="form-fields">
+              <div class="form-field">
+                <label for="first-name">First Name</label>
+                <input type="text" name="first-name" id="first-name" required />
+              </div>
 
-                <p>You <i>know</i> you want to.</p>
+              <div class="form-field">
+                <label for="last-name">Last Name</label>
+                <input type="text" name="last-name" id="last-name" required />
+              </div>
+
+              <div class="form-field">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" required />
+              </div>
+
+              <div class="form-field">
+                <label for="phone-number">Phone Number</label>
+                <input
+                  type="tel"
+                  name="phone-number"
+                  id="phone-number"
+                  required
+                />
+              </div>
+
+              <div class="form-field">
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" required />
+              </div>
+
+              <div class="form-field">
+                <label for="confirm-password">Confirm Password</label>
+                <input
+                  type="password"
+                  name="confirm-password"
+                  id="confirm-password"
+                  required
+                />
+              </div>
             </div>
-
-            <div class="form-container">
-                <h1>Let's do this!</h1>
-                <form action="#" method="post">
-                    <label for="first-name" form="first-name">First Name</label>
-                    <input type="text" name="first-name" id="first-name" placeholder="First Name" required>
-
-                    <label for="last-name" form="last-name">Last Name</label>
-                    <input type="text" name="last-name" id="last-name" placeholder="Last Name" required>
-
-                    <label for="email" form="email">Email</label>
-                    <input type="email" name="email" id="email" placeholder="Email" required>
-
-                    <label for="phone-number" form="phone-number">Phone Number</label>
-                    <input type="tel" name="phone-number" id="phone-number" placeholder="Phone Number" required>
-
-                    <label for="password" form="password">Password</label>
-                    <input type="password" name="password" id="password" placeholder="Password" required>
-
-                    <label for="confirm-password" form="confirm-password">Confirm Password</label>
-                    <input type="password" name="confirm-password" id="confirm-password" placeholder="Confirm Password" required>
-                    
-                    <button type="submit">Create Account</button>
-                </form>
-
-                <p class="login-link">Already have an account? <a href="#">Log in</a></p>
-            </div>
+          </form>
         </div>
+        <div class="form-actions">
+          <button type="submit" form="signup-form">Create Account</button>
+          <p class="login-link">
+            Already have an account? <a href="#">Log in</a>
+          </p>
+        </div>
+      </div>
     </div>
-</body>
+  </body>
 </html>
